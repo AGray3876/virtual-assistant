@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>
+    A.I. Chatbot
+  </title>
+  <style>
+    .chatbox {
+      position: relative;
+      min-width: 100px;
+      min-heigh: 300px;
+      width: 300px;
+      height: 350px;
+      border: black 1px solid;
+      border-radius: 25px;
+      top: 25px;
+    }
+
+    .typebox {
+      position: absolute;
+      width: 250px;
+      border: black 1px solid;
+      height: 45px;
+      bottom: 0;
+      left: 0;
+      border-radius: 25px;
+
+    }
+
+    .send {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 45px;
+      width: 50px;
+      border-radius: 5px;
+    }
+
+    .textbox {
+      whitespace: nowrap;
+      overflow: hidden;
+      color: black;
+      position: absolute;
+      bottom: 55px;
+      max-width: 300 px;
+      border-left: 1em transparent;
+      border-right: 1em transparent;
+      text-overflow: elipsis;
+    }
+
+    .advice {
+      width: 240px;
+      position: absolute;
+      left: 20%;
+      top: 50%;
+    }
+
+    .adbut {
+      width: 20px;
+      position: absolute;
+      left: 70%;
+      top: 50%;
+      width: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <div class='chatbox'>
+      </span>
+      <div class='textbox' id='outputdiv' name='outputdiv'></div>
+
+      <input class='typebox' id='typebox' name='typebox'>
+      <button class='send' onclick='send()'>Send</button>
+    </div>
+  </center>
+</body>
+<script src='./script.js'></script>
+
+</html>
